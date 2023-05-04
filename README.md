@@ -101,9 +101,15 @@ Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `edito
 - from github e escolhe o teu repositorio
 - [1] Colocar as Variaveis dentro railway project
 - adicionar `DISABLE_COLLECTSTATIC = 0 `, para railway colectar todos os estaticos = cmd python manage.py collectstatic
+
+<img src="https://i.imgur.com/lLeaiUB.png" title="source: imgur.com" />
+
 - depois é só mesmo esperar um pouco, maximo 2 minutos
 - entra na Deployments tab e verifica o teu endereço
 	- xxxxxxxx.up.railway.app
+	
+<img src="https://i.imgur.com/SVyztVB.png" title="source: imgur.com" />
+
 - Railway.app não precisa de `whitenoise` para publicar as `statics`, quando usas DEBUG=True
 
 <hr>
