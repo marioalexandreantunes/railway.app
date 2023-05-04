@@ -25,32 +25,32 @@ Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `edito
      - para saber o caminho do Python que estás a usar
           - `where python`
      - para saber todas as versões python instalados na tua maquina
-          - `py -0  --list`
+          - `python -0  --list`
      - para saber todas as versões python instaladas na tua maquina, e caminhos
-          - `py --list-paths`
+          - `python --list-paths`
 - Verificar PIP
      - `pip -V`
 - Instalar virtualenv
-     - `py -m pip install virtualenv`
+     - `python -m pip install virtualenv`
 - Agora iremos criar o nosso ambiente virtual, irá criar uma pasta `venv` para isolar a versão do Python e das bibliotecas usadas em um determinado sistema aplicações ou sistemas, assim não mudará nada na tua maquina local.
-     - `py -m virtualenv venv`
+     - `python -m virtualenv venv`
 - Activar esse ambiente , este comando é para windows, para desactivar é `deactivate`
-     - `venv\Scripts\activate`
+     - `venv\Scripts\activate` (windows) ou `source venv/bin/activate` (linux/MacOS)
 - atualizar & installar bibliotecas necessarias:
 ```sh
-     py -m pip install --upgrade pip
-     py -m pip install django
-     py -m pip install gunicorn
-     py -m pip install whitenoise[brotli]
-     py -m pip install dj-database-url
-     py -m pip install psycopg2-binary
-     py -m pip install cloudinary
-     py -m pip install python-dotenv
-     py -m pip install Pillow
+     python -m pip install --upgrade pip
+     python -m pip install django
+     python -m pip install gunicorn
+     python -m pip install whitenoise[brotli]
+     python -m pip install dj-database-url
+     python -m pip install psycopg2-binary
+     python -m pip install cloudinary
+     python -m pip install python-dotenv
+     python -m pip install Pillow
 ```
 - criar ficheiro requirements, esse ficheiro poderá ser usado quando clonares em outro ambiente e poderás instalar todas as bibliotecas necessarias so com um comando.
 ```sh
-     py -m pip freeze > requirements.txt
+     python -m pip freeze > requirements.txt
 ```
 - Agora é só criar um ficehiro na raiz do projecto `.env`, necessario para trabalharmos localmente, não irá para o github nem para o railway
 - colocar as VARIAVEIS DE AMBIENTE necessarias, que depois serão copiadas e usadas dentro do railway.app [1]
@@ -68,11 +68,11 @@ Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `edito
 - criar uma pasta ./static onde estará os nossos ficherios .css .js e imagens
 - finalizando com os comandos de Django :
 ```sh
-     py manage.py makemigrations
-     py manage.py migrate
-     py manage.py collectstatic --no-input
-     py manage.py check --deploy , revê security warnings, importante
-     py manage.py runserver
+     python manage.py makemigrations
+     python manage.py migrate
+     python manage.py collectstatic --no-input
+     python manage.py check --deploy , revê security warnings, importante
+     python manage.py runserver
 ```
 - Vamos precisar de criar dois ficheiros na raiz do projecto
      - `Procfile`
