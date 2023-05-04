@@ -34,7 +34,7 @@ Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `edito
      - `python -m pip install virtualenv`
 - Agora iremos criar o nosso ambiente virtual, irá criar uma pasta `venv` para isolar a versão do Python e das bibliotecas usadas em um determinado sistema aplicações ou sistemas, assim não mudará nada na tua maquina local.
      - `python -m virtualenv venv`
-- Activar esse ambiente , este comando é para windows, para desactivar é `deactivate`
+- Activar esse ambiente, para desactivar é `deactivate`
      - `venv\Scripts\activate` (windows) ou `source venv/bin/activate` (linux/MacOS)
 - atualizar & installar bibliotecas necessarias:
 ```sh
