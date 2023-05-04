@@ -20,7 +20,7 @@ Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `edito
 - Autenticação no gh cli
      - `gh auth login`, usando token
 - Clonar Repositorio usando gh cli
-     - `gh repo clone` REPOSITORIO
+     - `gh repo clone REPOSITORIO`
 - Alguns comandos (Windows) terminal, que poderás ter de saber
      - para saber o caminho do Python que estás a usar
           - `where python` (windows) `which python` (linux/MacOS)
