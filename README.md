@@ -102,7 +102,7 @@ Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `edito
 - [1] Colocar as Variaveis dentro railway project
 - adicionar `DISABLE_COLLECTSTATIC = 0 `, para railway colectar todos os estaticos = cmd python manage.py collectstatic
 
-<img src="https://i.imgur.com/lLeaiUB.png" title="source: imgur.com" />
+<img src="https://i.imgur.com/IHV620c.png" title="source: imgur.com" />
 
 - depois é só mesmo esperar um pouco, maximo 2 minutos
 - entra na Deployments tab e verifica o teu endereço
