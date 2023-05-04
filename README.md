@@ -23,11 +23,11 @@ Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `edito
      - `gh repo clone` REPOSITORIO
 - Alguns comandos (Windows) terminal, que poderás ter de saber
      - para saber o caminho do Python que estás a usar
-          - `where python`
+          - `where python` (windows) `which python` (linux/MacOS)
      - para saber todas as versões python instalados na tua maquina
-          - `python -0  --list`
+          - `python -0  --list` (Windows) `whereis python` (Linux/MacOS)
      - para saber todas as versões python instaladas na tua maquina, e caminhos
-          - `python --list-paths`
+          - `python --list-paths` (Windows)
 - Verificar PIP
      - `pip -V`
 - Instalar virtualenv
