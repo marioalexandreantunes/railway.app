@@ -46,6 +46,35 @@ Antes de começar, você precisará ter **Python**, **Git**, **Github cli**, um 
           - py -m pip install Pillow
      - criar ficheiro requirements, esse ficheiro poderá ser usado quando clonares em outro ambiente e poderás instalar todas as bibliotecas necessarias so com um comando.
           - py -m pip freeze > requirements.txt
+     - Agora é só criar um ficehiro na raiz do projecto **.env**, necessario para trabalharmos localmente, não irá para o github nem para o railway
+     - colocar as VARIAVEIS DE AMBIENTE necessarias, que depois serão copiadas e usadas dentro do railway.app[1]
+          - SECRET_KEY=
+          - DEBUG=False/True
+          - PYTHON_VERSION=3.9.13
+          - DATABASE_URL=
+          - CLOUDINARY_CLOUD_NAME=
+          - CLOUDINARY_API_KEY=
+          - CLOUDINARY__API_SECRET=
+          - ALLOWED_HOSTS=.railway.app,127.0.0.1,localhost
+     - Neste projecto o intuito não é ensinar como trabalhar com a framework **Django**
+          - neste projecto mudei, settings.py, urls.py, views.py e adicionai um .webapp/urls.py
+     - criar uma pasta ./webapp/templates
+     - criar uma pasta ./static onde estará os nossos ficherios .css .js e imagens
+     - finalizando com os comandos de Django :
+          - py manage.py makemigrations
+          - py manage.py migrate
+          - py manage.py collectstatic --no-input
+          - py manage.py check --deploy , revê security warnings, importante
+          - py manage.py runserver
+          - Tudo OK? seguimos ...
+     - Vamos precisar de criar dois ficheiros na raiz do projecto
+          - **Procfile**
+               - Atenção ao P em Maiusculas e sem extensão
+               - Ficheiro responsavel pelo Start Command , https://docs.railway.app/deploy/deployments#start-command 
+               - python manage.py collectstatic --noinput && gunicorn NOMEPROJECTO.wsgi --log-file -
+          - **runtime.txt**
+               - Ficheiro necessario railway.app
+               - deverá ter python-3.9.13 *Versão que queres* sem espaços
 
 ## Bit.io
      - Cria uma conta com GitHub, verifica email, e cria uma base de dados
@@ -55,30 +84,21 @@ Antes de começar, você precisará ter **Python**, **Git**, **Github cli**, um 
      . Cria uma conta com GitHub, verifica email, e copia os dados de acesso
      - Acede ao teu Media library e elimina tudo, eles colocam muitos exemplos para usares
 
-## Instruções de uso importantes
+## Railway.app
+     - https://docs.railway.app/
+     - Cria conta com github
+	- Criar agora um novo projecto
+	- from github e escolhe o teu repositorio
+	- [1]Colocar as Variaveis dentro railway project
+     - adicionar **DISABLE_COLLECTSTATIC** = 0, para railway colectar todos os estaticos = cmd python manage.py collectstatic
+	- depois é só mesmo esperar um pouco, maximo 2 minutos
+	- entra na Deployments tab e verifica o teu endereço
+		- xxxxxxxx.up.railway.app
+     - Railway.app não precisa de **whitenoise** para publicar as **statics**, quando usas DEBUG=True
+     - Poderás modificar o subdominio na pagina de Settings
+     - Poderás adicionar um dominio teu, é facil só seguir os passos.
 
-0.  https://docs.railway.app/
-
-1.  Vamos precisar de criar dois ficheiros
-     - **Procfile**
-     - **runtime.txt**
-
-2. Procfile
-     - Atenção ao P em Maiusculas e sem extensão
-     - python manage.py collectstatic --noinput && gunicorn NOMEPROJECTO.wsgi --log-file -
-
-3. runtime.txt
-     - Ficheiro necessario railway.app
-     - deverá ter python-3.11.2 *Versão que queres* sem espaços
-
-4. railway.app e poderás importar do teu github o projecto
-     - Railway.app não precisa de whitenoise para publicar as **statics**, em modo desenvolvedor
-     - Para nada melhor que estar preparado para publicar, usa **whitenoise**
-     - Nos settings do rail deves verificar se está assim : 
-          - python manage.py collectstatic --noinput && gunicorn NOMEPROJECTO.wsgi --log-file -
-     - Antes de iniciar a aplicação, configurei as variaveis necessarias
-     - adicionar **DISABLE_COLLECTSTATIC** = 0, para railway colectar todos os estaticos = cmd python manage.py collectstatic 
-
+Qualquer mudança que falas localmente e que envies para github o railway faz um novo 'deploy', mantendo sempre o projecto no ar atualizado.
 ## railway é mais rápido que o render.com!
 
 Mário ANTUNES @ 2023
