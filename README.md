@@ -47,6 +47,14 @@ Antes de começar, você precisará ter **Python**, **Git**, **Github cli**, um 
      - criar ficheiro requirements, esse ficheiro poderá ser usado quando clonares em outro ambiente e poderás instalar todas as bibliotecas necessarias so com um comando.
           - py -m pip freeze > requirements.txt
 
+## Bit.io
+     - Cria uma conta com GitHub, verifica email, e cria uma base de dados
+     - Copia para uma folha de texto o link com acesso à base de dados
+
+## Cloudinary.com
+     . Cria uma conta com GitHub, verifica email, e copia os dados de acesso
+     - Acede ao teu Media library e elimina tudo, eles colocam muitos exemplos para usares
+
 ## Instruções de uso importantes
 
 0.  https://docs.railway.app/
