@@ -5,8 +5,8 @@ Passo a Passo com intuito de ser usado por alunos no inicio de aprendizagem.
 
 ## Pré-requisitos
 
-Ter uma conta no  `railway.app` , `cloudinary.com` e `bit.io` , iremos recriar uma aplicação que estará 100% funcional, para subir imagens, usar PostgreSQL como base de dados, e usar arquivos estáticos.
-Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `editor de codigo` como VScode/Pycharm etc, verifica e instala as extensões necessarias no editor. A tua conta no `github` necessita de ter pelo menos *`90 dias e alguns repositorios`, railway.app verificará isso (ponto negativo no railway.app).
+Ter uma conta no  `railway.app` , `cloudinary.com` e `bit.io` , iremos recriar uma aplicação que estará 100% funcional, para subir imagens, usar `PostgreSQL` como base de dados, e usar arquivos estáticos.
+Antes de começar, você precisará ter `Python`, `Git`, `Github cli`, um `editor de codigo` como VScode/Pycharm etc, verifica e instala as extensões necessarias no editor. A tua conta no `github` necessita de ter pelo menos `90 dias e alguns repositorios`, railway.app verificará isso (ponto negativo no railway.app).
 
 ## GitHub
 
