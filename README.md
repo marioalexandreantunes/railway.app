@@ -1,6 +1,6 @@
 # Deploy de Aplicações Django no Railway.app
 
-Este repositório contém um exemplo de como fazer **criar um ambiente**, a **criação de uma aplicação Django**, instalarei as bibliotecas necessarias para estar 100% funcional, e **distribuir usando o serviço railway.app** (PaaS). 
+Este repositório contém um exemplo de como **criar um ambiente**, **inicio de uma aplicação Django**, instalando as bibliotecas necessarias para estar 100% funcional, e **distribuir usando o serviço railway.app** (PaaS). 
 Passo a Passo com intuito de ser usado por alunos no inicio de aprendizagem.
 
 ## Pré-requisitos
